@@ -84,7 +84,7 @@ export default {
       }else {
         var username = this.$route.query.user
         this.user = username
-        axios.get('http://localhost:8080/users/'+username+'/details', {
+        axios.get('https://gitinfoapi.herokuapp.com/users/'+username+'/details', {
         }).then(function(response) {
           _this.details = response.data
           _this.details.created_at = dateFormat(_this.details.created_at)
@@ -96,7 +96,7 @@ export default {
     },
     fetchRepos() {
       var _this = this
-      axios.get('http://localhost:8080/users/'+_this.user+'/repos', {
+      axios.get('https://gitinfoapi.herokuapp.com/users/'+_this.user+'/repos', {
       }).then(function(response) {
         _this.data = response.data
         _this.totalPages = _this.pageCount()

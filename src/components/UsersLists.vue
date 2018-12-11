@@ -69,7 +69,7 @@ export default {
   methods: {
     fetchGitUsers() {
       var _this = this
-      axios.get('http://localhost:8080/users?since='+_this.gitPageNumber, {
+      axios.get('https://gitinfoapi.herokuapp.com/users?since='+_this.gitPageNumber, {
       }).then(function(response) {
         console.log(response.data);
         _this.data = response.data[0]

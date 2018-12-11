@@ -1,4 +1,4 @@
-# shawandpartnersapp
+# GitUsersApp
 
 ## Project setup
 ```

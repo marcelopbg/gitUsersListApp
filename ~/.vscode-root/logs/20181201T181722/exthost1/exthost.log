@@ -1,0 +1,10 @@
+[2018-12-01 18:17:26.729] [exthost] [info] extension host started
+[2018-12-01 18:17:26.773] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:17:26.773] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2018-12-01 18:17:26.786] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:17:26.786] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2018-12-01 18:17:26.829] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:17:26.830] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/git/dist/main
+[2018-12-01 18:17:27.024] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:17:27.024] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2018-12-01 18:17:27.033] [exthost] [info] eager extensions activated

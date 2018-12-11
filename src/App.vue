@@ -1,9 +1,7 @@
 <template>
   <div id="app">
         <nav class="navbar navbar-light bg-light">
-          <router-link class="navbar-brand mb=0 h1" to="/">Shaw and Partners Test</router-link>
-          <!-- <a  href="#" class="navbar-brand mb-0 h1">
-            Shaw and Partners Test</a> -->
+          <router-link class="navbar-brand mb=0 h1" to="/">Github users</router-link>
         </nav>
   <div class="content">
     <router-view></router-view>

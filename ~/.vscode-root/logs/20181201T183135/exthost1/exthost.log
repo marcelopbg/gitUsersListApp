@@ -1,0 +1,16 @@
+[2018-12-01 18:31:39.587] [exthost] [info] extension host started
+[2018-12-01 18:31:39.637] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:31:39.637] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2018-12-01 18:31:39.649] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:31:39.649] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2018-12-01 18:31:39.685] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:31:39.685] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/git/dist/main
+[2018-12-01 18:31:39.929] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-12-01 18:31:39.929] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2018-12-01 18:31:39.938] [exthost] [info] eager extensions activated
+[2018-12-01 18:31:43.513] [exthost] [info] ExtensionService#_doActivateExtension octref.vetur {"startup":false,"activationEvent":"onLanguage:vue"}
+[2018-12-01 18:31:43.513] [exthost] [info] ExtensionService#loadCommonJSModule /home/marcelo/.vscode/extensions/octref.vetur-0.14.3/dist/client/vueMain
+[2018-12-01 18:32:47.658] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-12-01 18:32:47.658] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/extension-editing/dist/extension
+[2018-12-01 18:32:47.752] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-12-01 18:32:47.752] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/69/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension

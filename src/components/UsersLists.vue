@@ -8,6 +8,13 @@
 
     </div>
     <div v-else>
+            <div class="container">
+
+      <button id="nextPage" :class="gitNextPageClassBinder()" class="btn btn-primary ml-3 mb-2" type="button" v-on:click="nextGitPage()"> next Git Page <i class="fab fa-github ml-1"></i></button>
+      <button id="nextPage" :class="gitPrevPageClassBinder()" type="button" class="btn btn-secondary mb-2" v-on:click="previousGitPage()">previous Git Page <i class="fab fa-github ml-1"></i></button>
+      <br>
+      <br>
+      <br>
       <table class="table">
         <thead class="thead-dark">
           <tr>
@@ -22,7 +29,7 @@
           </tr>
         </tbody>
       </table>
-
+</div>
       <br>
       <br>
       <nav aria-label="Page navigation example">
@@ -46,6 +53,7 @@ export default {
     return {
       data: [],
       isLoading: true,
+      gitPageNumber: 1,
       pageNumber: 0,
       perPage: 8,
       totalPages: '',
@@ -53,11 +61,17 @@ export default {
 
     }
   },
+  watch: {
+    // gitPageNumber: function(val) {
+    //   console.log(val);
+    // }
+  },
   methods: {
     fetchGitUsers() {
       var _this = this
-      axios.get('http://localhost:8080/users?since=1', {
+      axios.get('http://localhost:8080/users?since='+_this.gitPageNumber, {
       }).then(function(response) {
+        console.log(response.data);
         _this.data = response.data[0]
         _this.isLoading = false
         _this.totalPages = _this.pageCount()
@@ -90,6 +104,29 @@ export default {
       return 'page-item'
     }
     },
+    gitPrevPageClassBinder() {
+      if(this.gitPageNumber!==1) {
+      return 'btn btn-dark'
+      }else {
+        return 'btn btn-dark disabled'
+      }
+    },
+    gitNextPageClassBinder() {
+      
+    },
+    nextGitPage() {
+      var _this = this
+      _this.gitPageNumber++;
+      _this.fetchGitUsers()  
+      
+    },
+    previousGitPage() {
+          var _this = this
+          if(_this.gitPageNumber>1) {
+      _this.gitPageNumber--;
+      _this.fetchGitUsers();
+      }
+    },
     nextPage(){
       this.pageNumber++;
     },
@@ -121,6 +158,10 @@ export default {
 </script>
 
 <style>
+#nextPage {
+  float:right;
+}
+
 .loader {
   margin: 0 auto;
   border: 16px solid #f3f3f3;

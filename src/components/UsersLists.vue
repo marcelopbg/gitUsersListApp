@@ -34,9 +34,9 @@
       <br>
       <nav aria-label="Page navigation example">
         <ul class="pagination">
-          <li :class="bindPrevClass()"><a class="page-link" v-on:click="prevPage()" href="#">Previous</a></li>
-          <li v-for="i in (1, totalPages)" :class="bindPageClass(i)"><a class="page-link" v-on:click="goToPage(i)" href="#">{{i}}</a></li>
-          <li :class="bindNextClass()"><a class="page-link" v-on:click="nextPage()" href="#">Next</a></li>
+          <li :class="bindPrevClass()"><a class="page-link" v-on:click="prevPage()">Previous</a></li>
+          <li v-for="i in (1, totalPages)" :class="bindPageClass(i)"><a class="page-link" v-on:click="goToPage(i)">{{i}}</a></li>
+          <li :class="bindNextClass()"><a class="page-link" v-on:click="nextPage()">Next</a></li>
         </ul>
       </nav>
     </div>

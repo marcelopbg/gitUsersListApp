@@ -72,7 +72,7 @@ export default {
       var _this = this
       axios.get('https://gitinfoapi.herokuapp.com/users?since='+_this.gitPageNumber, {
       }).then(function(response) {
-        console.log(response.data);
+        // console.log(response.data);
         _this.data = response.data[0]
         _this.isLoading = false
         _this.totalPages = _this.pageCount()

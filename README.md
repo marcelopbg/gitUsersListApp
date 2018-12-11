@@ -25,8 +25,6 @@ npm run test
 npm run lint
 ```
 ### Important Observations
-```
 Application is hosted on Heroku: [https://gitinfoapp.herokuapp.com/#/](https://gitinfoapp.herokuapp.com/#/)
 
 Api Repository is avaiable at: [https://github.com/marcelopbg/gitUsersListAPI](https://github.com/marcelopbg/gitUsersListAPI)
-```

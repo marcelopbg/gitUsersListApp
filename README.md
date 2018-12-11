@@ -24,3 +24,10 @@ npm run test
 ```
 npm run lint
 ```
+
+```
+Application is hosted on Heroku: [a link](https://gitinfoapp.herokuapp.com/#/)
+```
+```
+Api Repository is avaiable at: [a link](https://github.com/marcelopbg/gitUsersListAPI)
+```
